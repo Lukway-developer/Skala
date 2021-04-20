@@ -1,0 +1,23 @@
+{
+  "name": "skala-ecommerce-backend",
+  "version": "1.0.0",
+  "description": "Skala Ecommerce - Backend - Lukway Project",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "start": "nodemon index.js"
+  },
+  "keywords": [],
+  "author": "Lucas Matias Ojeda de Sousa <lukway.developer@gmail.com>",
+  "license": "MIT",
+  "eslintConfig": {
+    "extends": "./node_modules/standard/eslintrc.json"
+  },
+  "dependencies": {
+    "express": "^4.17.1"
+  },
+  "devDependencies": {
+    "nodemon": "^2.0.7",
+    "standard": "^16.0.3"
+  }
+}
