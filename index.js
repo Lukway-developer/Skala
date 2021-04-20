@@ -11,7 +11,7 @@ const data = {
       price: '700',
       image: './images/cremas/Lama Negra.jpg',
       category: 'expert',
-      onfire: 'true'
+      onfire: true
     }, {
       id: 1,
       title: 'Mas Lisos',
@@ -19,7 +19,7 @@ const data = {
       price: '700',
       image: './images/cremas/Mais Lisos.jpg',
       category: 'expert',
-      onfire: 'true'
+      onfire: true
     }, {
       id: 2,
       title: 'Doña Skala',
