@@ -3,7 +3,7 @@ const cors = require('cors')
 const app = express()
 
 const data = {
-  creams: [
+  products: [
     {
       id: 0,
       title: 'Lama Negra',
