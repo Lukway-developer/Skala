@@ -171,7 +171,7 @@ app.get('/', (request, response) => {
   response.json(creams)
 })
 
-const PORT = process.env.PORT || 3001
-app.listen(PORT, () => {
+const port = process.env.PORT || 3001
+app.listen(port, () => {
   console.log('API SKALA Ecommerce is ready, by Lukway')
 })
