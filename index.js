@@ -138,7 +138,7 @@ const data = {
       description: 'Nutrición y revitalización para cabellos secos y opacos',
       price: '700',
       image: './images/cremas/Óleo de Argon.jpg',
-      category: 'naturals',
+      category: 'spa naturals',
       onfire: false
     }, {
       id: 17,
@@ -146,7 +146,7 @@ const data = {
       description: 'Nutrición y revitalización profuda para cabellos secos y dañados',
       price: '700',
       image: './images/cremas/Óleo de Coco.jpg',
-      category: 'naturals',
+      category: 'spa naturals',
       onfire: false
     }, {
       id: 18,
@@ -154,7 +154,7 @@ const data = {
       description: 'Brillo y reducción de porosidad para cabellos resecos y con frizz',
       price: '700',
       image: './images/cremas/Vinagre de Maçã.jpg',
-      category: 'naturals',
+      category: 'spa naturals',
       onfire: false
     }, {
       id: 19,
@@ -162,7 +162,7 @@ const data = {
       description: 'Brillo para cabellos secos y tratados químicamente',
       price: '700',
       image: './images/cremas/Arguila Branca.jpg',
-      category: 'naturals',
+      category: 'spa naturals',
       onfire: false
     }, {
       id: 20,
@@ -170,7 +170,7 @@ const data = {
       description: 'Suavidad, sedosidad y brillo para cabellos resecos y fragiles',
       price: '700',
       image: './images/cremas/Manteiga de Karité.jpg',
-      category: 'naturals',
+      category: 'spa naturals',
       onfire: false
     }, {
       id: 21,
