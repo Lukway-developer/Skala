@@ -10,6 +10,9 @@
   "keywords": [],
   "author": "Lucas Matias Ojeda de Sousa <lukway.developer@gmail.com>",
   "license": "MIT",
+  "engines": {
+    "node": "12.20.1"
+  },
   "eslintConfig": {
     "extends": "./node_modules/standard/eslintrc.json"
   },
