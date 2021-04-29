@@ -1,0 +1,91 @@
+.footer{
+  width: 100%;
+  height: fit-content;
+  padding: 20px 30px;
+  background-color: $green;
+  background-image: linear-gradient(to right, $green-light 0% 20%, $yellow-light 20% 40%, $blue-light 40% 60%, $yellow-light 60% 80%, $green-light 80% 100%);
+  // background-image: linear-gradient(to right, $green 0% 15%, $yellow 15% 35%, $blue 35% 65%, $yellow 65% 85%, $green 85% 100%);
+  display: grid;
+  grid-template-columns: repeat(4, 1fr);
+  grid-template-areas: "instagram client client facebook";
+  gap: 30px;
+  justify-content: center;
+  align-items: center;
+  text-align: center;
+  :nth-child(1){
+    grid-area: instagram;
+  }
+  :nth-child(2){
+    grid-area: client;
+    .footer_title{
+      margin: 0;
+    }
+  }
+  :nth-child(3){
+    grid-area: facebook;
+  }
+  &_item{
+    padding: 20px;
+    border-radius: 25px;
+    background: $white-light;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    color: $black-dark;
+    text-decoration: none;
+    transition: box-shadow .2s;
+    &:hover{
+      box-shadow: 0px 5px 25px rgba(0, 0, 0, 0.45);
+      & > i {
+        transform: scale(1.2);
+      }
+    }
+    & > i{
+      font-size: 60px;
+      transition: transform .2s;
+    }
+    .fa-instagram{
+      background: $instagram;
+      -webkit-background-clip: text;
+      background-clip: text;
+      -webkit-text-fill-color: transparent;
+    }
+    .fa-facebook{
+      color: $facebook;
+    }
+  }
+  &_title{
+    margin-top: 0;
+    font-size: 1.25rem;
+  }
+  &_text{
+    font: $font-lato-italic;
+  }
+  &_logo_container{
+    width: 100%;
+    padding: 0 20px;
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 30px;
+    .fa-phone{
+      color: $phone;
+      transform: rotate(90deg);
+      &:hover{
+        transform: rotate(90deg) scale(1.2);
+      }
+    }
+    .fa-envelope{
+      color: $email;
+      font-size: 1.1em;
+      &:hover{
+        transform: scale(1.2);
+      }
+    }
+    i{
+      transition: transform .2s;
+    }
+  }
+}

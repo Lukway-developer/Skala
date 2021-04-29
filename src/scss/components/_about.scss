@@ -1,0 +1,52 @@
+.about{
+  height: calc(100vh - 60px);
+  padding: 30px;
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  grid-template-rows: calc(100vh - 120px);
+  gap: 30px;
+  justify-items: center;
+  align-items: center;
+  &_text_container{
+    text-align: center;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 10px;
+    justify-items: center;
+    align-items: center;
+    :nth-child(2)
+    {
+      margin-top: 0;
+    }
+  }
+  &_logo{
+    height: 100px;
+  }
+  &_img{
+    height: 100px;
+  }
+  &_text{
+    font-size: 1.1em;
+    &-green{
+      color: $green;
+      font-weight: bold;
+    }
+    &-yellow{
+      color: $yellow-dark;
+      font-weight: bold;
+    }
+    &-blue{
+      color: $blue;
+      font-weight: bold;
+    }
+    &-red{
+      color: $red;
+      font-weight: bold;
+    }
+    &-celebrate{
+      margin-top: 0;
+      font: $font-playfair;
+      font-size: 1.5rem;
+    }
+  }
+}

@@ -1,0 +1,222 @@
+.buy{
+  &_container{
+    width: 100%;
+    min-height: 100vh;
+    background-color: $black-shadow;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    position: fixed;
+    top: 0;
+    right: 0;
+    z-index: 99999;
+    text-align: center;
+  }
+  &_card{
+    width: 400px;
+    min-height: calc(100px + 160px);
+    height: fit-content;
+    max-height: calc(320px + 160px);
+    border-radius: 20px;
+    background-color: $white-dark;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    &_title{
+      margin: 15px 0;
+      font-family: $font-viga;
+    }
+  }
+  &_item_container{
+    width: 100%;
+    height: fit-content;
+    max-height: 320px;
+    margin-bottom: 100px;
+    padding: 20px 15px;
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    justify-items: center;
+    align-items: center;
+    overflow-y: scroll;
+    overflow-x: hidden;
+    &::-webkit-scrollbar{
+      display: none;
+    }
+    :last-child{
+      position: relative;
+      &::after{
+        content: "";
+        width: 100%;
+        height: 15px;
+        display: block;
+        position: absolute;
+        top: 100%;
+      }
+    }
+  }
+  &_item{
+    width: 100%;
+    height: 80px;
+    border-radius: 18px;
+    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    background-color: $white-light;
+    display: flex;
+    justify-content: space-between;
+    align-items: flex-end;
+    position: relative;
+  }
+  &_img{
+    height: 108%;
+    margin: 0 0 5px 5px;
+    filter: drop-shadow(0 0 3px rgba(0, 0, 0, 0.25));
+  }
+  &_title{
+    margin: 0;
+    line-height: 80px;
+    font-family: $font-viga;
+    font-size: 1rem;
+    &-empty{
+      font-family: $font-viga;
+      margin: 0;
+    }
+  }
+  &_text-empty{
+    margin-top: 1.5rem;
+    margin-bottom: 100px;
+    color: $black-light;
+  }
+  &_panel{
+    width: 35%;
+    height: 100%;
+    padding: 5px;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    align-items: center;
+    overflow: hidden;
+  }
+  &_buttons_container{
+    width: 100%;
+    height: 30px;
+    display: grid;
+    grid-template-columns: repeat(3, 1fr);
+    align-items: center;
+  }
+  &_button{
+    width: 100%;
+    height: 100%;
+    outline: unset;
+    border: unset;
+    border-radius: 18px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    color: $white-light;
+    cursor: pointer;
+    &-minus, &-plus{
+      @extend .buy_button;
+    }
+    &-minus{
+      background: $red-light;
+      &:hover{
+        background: $red;
+      }
+    }
+    &-plus{
+      background: $green-light;
+      &:hover{
+        background: $green;
+      }
+    }
+    &-close{
+      width: 30px;
+      height: 30px;
+      border: unset;
+      border-radius: 15px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+      background: $red-light;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      position: absolute;
+      top: -15px;
+      right: -15px;
+      color: $white-light;
+      font-size: 20px;
+      cursor: pointer;
+      z-index: 99999;
+      &:hover{
+        background: $red;
+      }
+    }
+    &-trash{
+      @extend .buy_button-close;
+      width: 20px;
+      height: 20px;
+      font-size: 12px;
+      position: absolute;
+      top: -7px;
+      right: -7px;
+    }
+    &-empty, &-submit{
+      width: calc(100% - 30px);
+      height: 60px;
+      border:  unset;
+      border-radius: 18px;
+      box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      font-family: $font-viga;
+      font-size: 1.5rem;
+      color: $white-light;
+      cursor: pointer;
+      position: absolute;
+      bottom: 20px;
+    }
+    &-empty{
+      background-color: $red-light;
+      &:hover{
+        background-color: $red;
+      }
+      i{
+        margin-left: 10px;
+      }
+    }
+    &-submit{
+      background-color: $green-light;
+      &:hover{
+        background-color: $green;
+      }
+    }
+  }
+  &_quantity_container{
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  &_quantity{
+    font-weight: bold;
+  }
+  &_price_container{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    gap: 10px;
+    font-size: 1.1rem;
+  }
+  &_price{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-weight: bold;
+  }
+  &_coin{
+    color: $green;
+    font-weight: bold;
+  }
+}

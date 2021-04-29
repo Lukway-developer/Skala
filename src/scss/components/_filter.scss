@@ -1,0 +1,85 @@
+.filter{
+  grid-area: filter;
+  width: 275px;
+  height: 60px;
+  border-radius: 20px;
+  padding: 12px 20px;
+  box-shadow: 0px 5px 10px rgba(0, 0, 0, 0.25);
+  background-color: $white-light;
+  display: flex;
+  align-items: center;
+  float: right;
+  font-weight: bolder;
+  &_container{
+    padding: 0 20px;
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    grid-template-areas: ". . . filter";
+    justify-items: center;
+    gap: 50px;
+    animation: appear .5s ease-out;
+  }
+  &_label{
+    margin-right: 5px;
+  }
+  &_selector{
+    width: 100%;
+    height: 100%;
+    outline: unset;
+    border: 2px solid $green;
+    border-radius: 5px;
+    padding: 5px;
+    background-color: $white;
+    font-weight: bold;
+    cursor: pointer;
+    transition: border .2s, background-color .2s, color .2s;
+    &:hover{
+      background-color: $white-dark;
+    }
+    option{
+      padding: 5px;
+      font-family: "Lato", sans-serif;
+      font-size: 1rem;
+      cursor: pointer;
+    }
+  }
+}
+
+@media (max-width: 1290px) {
+  .filter{
+    &_container{
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 1200px) {
+  .filter{
+    &_container{
+      grid-template-columns: repeat(3, 1fr);
+      grid-template-areas: ". . filter";
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 915px) {
+  .filter{
+    &_container{
+      grid-template-columns: 1fr;
+      grid-template-areas: "filter";
+      gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .filter{
+    width: 320px;
+    &_container{
+      grid-template-columns: 1fr;
+      grid-template-areas: "filter";
+      gap: 20px;
+    }
+  }
+}
