@@ -289,7 +289,7 @@ app.post('/create_preference', (req, res) => {
 
   mercadopago.preferences.create(preference)
     .then(function (response) {
-      res.json({ id: response.body.id })
+      global.id = response.body.id
     }).catch(function (error) {
       console.log(error)
     })
