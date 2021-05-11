@@ -256,7 +256,10 @@ app.use(express.urlencoded({ extended: false }))
 app.use(express.json())
 app.use(cors())
 
-mercadopago.configurations.setAccessToken('TEST-8406703159152890-042221-c4aa848274bd3dcf8cb9a713979a148f-747057913')
+// mercadopago.configurations.setAccessToken('TEST-8406703159152890-042221-c4aa848274bd3dcf8cb9a713979a148f-747057913')
+mercadopago.configure({
+  access_token: 'TEST-8406703159152890-042221-c4aa848274bd3dcf8cb9a713979a148f-747057913'
+})
 
 app.get('/', (request, response) => {
   response.json(data)
@@ -264,11 +267,18 @@ app.get('/', (request, response) => {
 
 app.post('/create_preference', (req, res) => {
   const preference = {
-    items: [{
-      title: req.body.description,
-      unit_price: Number(req.body.price),
-      quantity: Number(req.body.quantity)
-    }],
+    // items: [{
+    //   title: req.body.description,
+    //   unit_price: Number(req.body.price),
+    //   quantity: Number(req.body.quantity)
+    // }]
+    items: [
+      {
+        title: 'lucas',
+        unit_price: 100,
+        quantity: 1
+      }
+    ],
     back_urls: {
       success: 'http://localhost:8080/feedback',
       failure: 'http://localhost:8080/feedback',
