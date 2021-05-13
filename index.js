@@ -261,36 +261,28 @@ mercadopago.configure({
   access_token: 'TEST-8406703159152890-042221-c4aa848274bd3dcf8cb9a713979a148f-747057913'
 })
 
-app.get('/', (request, response) => {
-  response.json(data)
+app.get('/', (req, res) => {
+  res.json(data)
 })
 
 app.post('/create_preference', (req, res) => {
   const preference = {
-    // items: [{
-    //   title: req.body.description,
-    //   unit_price: Number(req.body.price),
-    //   quantity: Number(req.body.quantity)
-    // }]
-    items: [
-      {
-        title: 'lucas',
-        unit_price: 100,
-        quantity: 1
-      }
-    ],
+    items: req.body,
     back_urls: {
-      success: 'http://localhost:8080/feedback',
-      failure: 'http://localhost:8080/feedback',
-      pending: 'http://localhost:8080/feedback'
+      success: 'https://lukway-developer.github.io/Skala/',
+      failure: 'https://lukway-developer.github.io/Skala/',
+      pending: 'https://lukway-developer.github.io/Skala/'
     },
     auto_return: 'approved'
   }
 
   mercadopago.preferences.create(preference)
-    .then(function (response) {
-      res.json({ id: response.body.id })
-    }).catch(function (error) {
+    .then(response => {
+      res.json({
+        id: response.body.id,
+        urlCheckout: response.body.init_point
+      })
+    }).catch(error => {
       console.log(error)
     })
 })
