@@ -1,9 +1,3 @@
-<style>
-  .tech_logo{
-    width=50px
-  }
-</style>
-
 # Skala Ecommerce ![Skala Logo](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
 You can see this project here [Skala Ecommerce](https://lukway-developer.github.io/Skala/).
 
@@ -11,7 +5,7 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 
 This is an ecommerce project made with:
 
-#### <span class="tech_logo"> ![Kitten](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo")</span> HTML
+    <span class="tech_logo"> ![Kitten](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo")</span> HTML
 #### CSS - Sass
 #### React
 #### Node.js - Express
@@ -80,4 +74,8 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
 
-
+<style>
+  .tech_logo{
+    width=50px
+  }
+</style>
