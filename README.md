@@ -5,9 +5,12 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 
 **This is an ecommerce project made with:**
 #### <img src="https://github.com/Lukway-developer/Logos/blob/master/html.svg" title="HTML Logo" height=20/> HTML
-#### CSS - Sass
-#### React
-#### Node.js - Express
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/css.svg" title="CSS Logo" height=20/> CSS
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/sass.svg" title="Sass Logo" height=20/> Sass
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/js.svg" title="JavaScript Logo" height=20/> JavaScript
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/react.svg" title="React Logo" height=20/> React
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/nodejs.svg" title="Node.js Logo" height=20/> Node.js
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/express.svg" title="Express Logo" height=20/> Express
 #### Mercado Pago Api
 
 ### `npm start`
