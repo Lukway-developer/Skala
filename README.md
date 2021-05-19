@@ -5,7 +5,7 @@ You can see this project here [Skala Ecommerce ![alt text](images/brand/Skala%20
 
 This is an ecommerce project made with:
 
-#### ![HTML Logo](https://github.com/Lukway-developer/Logos/blob/master/html.svg?raw=true | width=50 "HTML Logo") HTML
+#### ![HTML Logo](https://github.com/Lukway-developer/Logos/blob/master/html.svg?raw=true 50x50 "HTML Logo") HTML
 #### CSS - Sass
 #### React
 #### Node.js - Express
