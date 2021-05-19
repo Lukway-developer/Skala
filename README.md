@@ -11,7 +11,7 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 #### <img src="https://github.com/Lukway-developer/Logos/blob/master/react.svg" title="React Logo" height=20/> React
 #### <img src="https://github.com/Lukway-developer/Logos/blob/master/nodejs.svg" title="Node.js Logo" height=20/> Node.js
 #### <img src="https://github.com/Lukway-developer/Logos/blob/master/express.svg" title="Express Logo" height=20/> Express
-#### Mercado Pago Api
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/mercadopago.svg" title="Express Logo" height=20/> Mercado Pago Api
 
 ### `npm start`
 
