@@ -3,8 +3,8 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 
 ## Content
 
-This is an ecommerce project made with:
-<img src="https://github.com/Lukway-developer/Logos/blob/master/html.svg" title="HTML Logo" height=20/> HTML
+**This is an ecommerce project made with:**
+#### <img src="https://github.com/Lukway-developer/Logos/blob/master/html.svg" title="HTML Logo" height=20/> HTML
 #### CSS - Sass
 #### React
 #### Node.js - Express
