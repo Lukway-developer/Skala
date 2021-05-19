@@ -5,7 +5,7 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 
 This is an ecommerce project made with:
 
-    <span class="tech_logo"> ![Kitten](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo")</span> HTML
+<span class="tech_logo"> ![Kitten](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo")</span> HTML
 #### CSS - Sass
 #### React
 #### Node.js - Express
