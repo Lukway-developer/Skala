@@ -1,9 +1,3 @@
-<style>
-  .tech_logo{
-    width=50px
-  }
-</style>
-
 # Skala Ecommerce ![Skala Logo](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
 You can see this project here [Skala Ecommerce](https://lukway-developer.github.io/Skala/).
 
@@ -11,7 +5,7 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 
 This is an ecommerce project made with:
 
-<img class="tech_logo" src="https://github.com/Lukway-developer/Logos/blob/master/html.svg" title="HTML Logo"/> HTML
+<img src="https://github.com/Lukway-developer/Logos/blob/master/html.svg" title="HTML Logo" style="width: 50px"/> HTML
 #### CSS - Sass
 #### React
 #### Node.js - Express
