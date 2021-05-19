@@ -1,4 +1,4 @@
-# Skala Ecommerce ![alt text](/blob/master/public/images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
+# Skala Ecommerce ![alt text](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
 This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
 
 ## Available Scripts
