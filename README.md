@@ -1,3 +1,9 @@
+<style>
+  .tech_logo{
+    width=50px
+  }
+</style>
+
 # Skala Ecommerce ![Skala Logo](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
 You can see this project here [Skala Ecommerce](https://lukway-developer.github.io/Skala/).
 
@@ -73,9 +79,3 @@ This section has moved here: [https://facebook.github.io/create-react-app/docs/d
 ### `npm run build` fails to minify
 
 This section has moved here: [https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify](https://facebook.github.io/create-react-app/docs/troubleshooting#npm-run-build-fails-to-minify)
-
-<style>
-  .tech_logo{
-    width=50px
-  }
-</style>
