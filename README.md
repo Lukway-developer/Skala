@@ -14,8 +14,9 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 #### <img src="https://github.com/Lukway-developer/Logos/blob/master/mercadopago.svg" title="Mercado Pago Logo" height=20/> Mercado Pago API
 
 ### `Preview`
- ![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/home.png "Preview")
-
+![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/home.png "Preview 1")
+![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/products.png "Preview 2")
+![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/products_buy.png "Preview 3")
 ### `About Lukway`
 
 #### Website: https://www.lukway.site/
