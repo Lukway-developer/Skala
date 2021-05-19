@@ -1,10 +1,11 @@
 .products{
   padding-top: 20px;
+  position: relative;
   &_container{
     width: 100%;
     height: fit-content;
     margin: 0 auto;
-    padding: 20px 20px 50px;
+    padding: 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
     justify-items: center;
@@ -115,16 +116,43 @@
     outline: none;
     border: unset;
     border-radius: 8px;
-    padding: 6px 16px;
+    padding: 10px 16px;
     background: $green;
+    display: flex;
+    justify-content: center;
+    align-items: center;
     color: $white-light;
     font-size: 1.1rem;
     font-family: $font-viga;
     letter-spacing: 1px;
     cursor: pointer;
     transition: background-color .2s, color .2s;
+    i{
+      margin: 0 0 4px 10px;
+    }
     &:hover{
       background: $green-dark;
+    }
+    &-to-top{
+      width: 50px;
+      height: 50px;
+      outline: none;
+      border: 2px solid $yellow;
+      border-radius: 50%;
+      background-color: $blue;
+      box-shadow: 0 0 8px $black-shadow;
+      color: $white;
+      font-size: 24px;
+      position: fixed;
+      bottom: 16px;
+      right: 16px;
+      z-index: 99999;
+      cursor: pointer;
+      transition: box-shadow .2s;
+      animation: appear .5s ease-out;
+      &:hover{
+        box-shadow: 0 0 16px $black-shadow;
+      }
     }
   }
   &_check_container{
@@ -161,10 +189,10 @@
     width: 100px;
     height: 100px;
     outline: none;
-    border: 2px solid $white-dark;
+    border: 3px solid $yellow;
     border-radius: 50%;
-    background: $black-light;
-    color: $white-light;
+    background: $blue;
+    color: $white;
     display: flex;
     justify-content: center;
     align-items: center;
@@ -292,19 +320,47 @@
 
 @media (max-width: 425px) {
   .products{
+    &_container{
+      padding: 20px 16px;
+    }
     &_card{
       width: 320px;
       height: 390px;
       padding: 16px;
     }
     &_price{
-      font-size: 1.5rem;
+      font-size: 1.6rem;
     }
     &_image{
       height: 170px;
     }
-    &_button{
-      height: 40px;
+  }
+}
+
+@media (max-width: 375px) {
+  .products{
+    &_card{
+      width: 100%;
+      height: 390px;
+      padding: 16px;
+    }
+  }
+}
+
+@media (min-width: 1600px) {
+  .products{
+    &_container{
+      grid-template-columns: repeat(5, 1fr);
+    }
+  }
+}
+
+@media (min-width: 1960px) {
+  .products{
+    &_container{
+      width: fit-content;
+      margin: 0 auto;
+      grid-template-columns: repeat(6, 1fr);
     }
   }
 }

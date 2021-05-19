@@ -1,10 +1,14 @@
 import Navbar from "./Navbar";
 import Footer from "./Footer";
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import BuyContainer from "./BuyContainer";
 
 const Layout = ({ children, currentPage }) => {
   const [showBuys, setShowBuys] = useState(false)
+
+  useEffect(() => {
+    window.scrollTo(0, 0)
+  }, [])
 
   const handleShowBuys = () => {
     if(showBuys) setShowBuys(false)

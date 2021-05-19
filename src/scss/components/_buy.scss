@@ -2,6 +2,7 @@
   &_container{
     width: 100%;
     min-height: 100vh;
+    padding: 0 16px;
     background-color: $black-shadow;
     display: flex;
     justify-content: center;
@@ -14,18 +15,20 @@
   }
   &_card{
     width: 400px;
-    min-height: calc(100px + 160px);
     height: fit-content;
-    max-height: calc(320px + 160px);
     border-radius: 20px;
-    background-color: $white-dark;
+    padding: 15px 0;
+    background: $green linear-gradient($green-light, $green);
+    color: $white;
     display: flex;
     flex-direction: column;
     justify-content: center;
     align-items: center;
     position: relative;
+    animation: appear .3s ease-out;
     &_title{
-      margin: 15px 0;
+      margin: 0;
+      letter-spacing: 1px;
       font-family: $font-viga;
     }
   }
@@ -33,7 +36,6 @@
     width: 100%;
     height: fit-content;
     max-height: 320px;
-    margin-bottom: 100px;
     padding: 20px 15px;
     display: grid;
     grid-template-columns: 1fr;
@@ -61,8 +63,9 @@
     width: 100%;
     height: 80px;
     border-radius: 18px;
-    box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
+    box-shadow: 0px 3px 5px rgba(0, 0, 0, 0.25);
     background-color: $white-light;
+    color: $black;
     display: flex;
     justify-content: space-between;
     align-items: flex-end;
@@ -86,7 +89,7 @@
   &_text-empty{
     margin-top: 1.5rem;
     margin-bottom: 100px;
-    color: $black-light;
+    color: $white-dark;
   }
   &_panel{
     width: 35%;
@@ -116,6 +119,7 @@
     align-items: center;
     color: $white-light;
     cursor: pointer;
+    transition: background-color .2s;
     &-minus, &-plus{
       @extend .buy_button;
     }
@@ -148,6 +152,7 @@
       font-size: 20px;
       cursor: pointer;
       z-index: 99999;
+      transition: background-color .2s;
       &:hover{
         background: $red;
       }
@@ -170,12 +175,14 @@
       display: flex;
       justify-content: center;
       align-items: center;
+      color: $white-light;
       font-family: $font-viga;
       font-size: 1.5rem;
-      color: $white-light;
+      text-decoration: unset;
       cursor: pointer;
       position: absolute;
       bottom: 20px;
+      transition: background-color .2s;
     }
     &-empty{
       background-color: $red-light;
@@ -220,3 +227,18 @@
     font-weight: bold;
   }
 }
+
+@media (max-width: 425px) {
+  .buy{
+    &_text-empty{
+      margin: 1.5rem 10px 100px;
+    }
+    &_button{
+      &-empty{
+        font-size: 1.4rem;
+      }
+    }
+  }
+}
+
+

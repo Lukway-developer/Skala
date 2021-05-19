@@ -11,45 +11,31 @@
   top: 0;
   left: 0;
   z-index: 99999;
-  font-weight: bold;
   &_logo{
-    height: 40px;
+    height: 50px;
   }
-  &_button_container{
-    width: fit-content;
-    height: 100%;
-    display: grid;
-    grid-auto-flow: column;
-  }
-  &_button{
-    width: fit-content;
-    height: 100%;
-    padding: 10px 15px;
-    display: flex;
-    justify-content: center;
-    align-items: center;
-    color: $black-dark;
-    text-decoration: none;
-    transition: background-color .2s, color .2s;
-    &:hover{
-      background: $white;
-      color: $green;
-    }
-  }
-  &_shop{
+  &_bag{
     width: 44px;
     height: 44px;
     outline: none;
-    border: 1px solid $black-dark;
+    border: 2px solid $yellow;
     border-radius: 50%;
-    background: $black-light;
-    color: $white-light;
+    box-shadow: 0 0 5px $black-shadow;
+    background: $blue;
+    justify-self: right;
+    color: $white;
     font-size: 20px;
     position: relative;
     cursor: pointer;
-    transition: box-shadow .2s;
+    transition: border .2s, box-shadow .2s, background-color .2s, color .2s;
     &:hover{
-      box-shadow: 0 0 16px $black-shadow;
+      border: 2px solid $yellow-dark;
+      box-shadow: 0 0 10px $black-shadow;
+      background: $blue-dark;
+      color: $white-dark;
+      .nav_bag-counter{
+        background: $green-dark;
+      }
     }
     &-counter{
       width: 20px;
@@ -64,60 +50,23 @@
       position: absolute;
       top: -5px;
       right: -5px;
-    }
-  }
-  .current_page{
-    background: $white;
-    color: $green;
-    position: relative;
-    &:after{
-      content: "";
-      width: 100%;
-      height: 3px;
-      background-color: $green;
-      position: absolute;
-      bottom: 0;
-      left: 0;
+      transition: background-color .2s;
     }
   }
 }
 
 @media (max-width: 768px) {
   .nav{
-    &_button_container{
-      width: 100%;
-      height: 60px;
-      box-shadow: 0px -5px 10px rgba(0, 0, 0, 0.25);
-      background-color: inherit;
-      display: grid;
-      grid-template-columns: repeat(3, 1fr);
-      position: fixed;
-      bottom: 0;
-      left: 0;
-    }
-    &_button{
-      width: 100%;
-    }
-    &_shop{
-      position: fixed;
-      bottom: 70px;
-      right: 20px;
-    }
-    .current_page{
-      &:after{
-        top: 0;
-      }
-    }
+    padding: 0 10px;
   }
 }
 
-@media (max-width: 425px) {
-  .nav{
-    justify-content: center;
-    &_shop{
-      position: fixed;
-      bottom: 70px;
-      right: 20px;
-    }
-  }
-}
+// @media (max-width: 425px) {
+//   .nav{
+//     &_bag{
+//       position: fixed;
+//       bottom: 70px;
+//       right: 20px;
+//     }
+//   }
+// }

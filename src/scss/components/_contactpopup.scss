@@ -14,7 +14,8 @@
     width: 400px;
     border-radius: 20px;
     padding: 20px 15px;
-    background-color: $white-dark;
+    background: $green linear-gradient($green-light, $green);
+    color: $white-light;
     display: grid;
     grid-template-columns: 1fr;
     gap: 20px;
@@ -24,31 +25,25 @@
   }
   &_title{
     margin: 0;
+    letter-spacing: 1px;
     font-family: $font-viga;
   }
   &_text{
     margin: 0;
-    color: $black-light;
+    color: $white;
   }
   &_item_container{
     width: 100%;
     height: fit-content;
     max-height: 320px;
     display: grid;
-    grid-template-columns: 1fr 1fr;
-    grid-template-areas: "client client"
-                         "instagram facebook";
-    gap: 20px;
+    grid-template-columns: repeat(2, 1fr);
+    grid-template-areas: "client client";
+    gap: 16px;
     justify-items: center;
     align-items: center;
-    :nth-child(1){
-      grid-area: instagram;
-    }
-    :nth-child(2){
+    :first-child{
       grid-area: client;
-    }
-    :nth-child(3){
-      grid-area: facebook;
     }
   }
   &_item{
@@ -60,10 +55,11 @@
     box-shadow: 0px 5px 15px rgba(0, 0, 0, 0.25);
     background-color: $white-light;
     display: flex;
-    flex-direction: column;
-    justify-content: space-between;
+    flex-wrap: wrap;
+    justify-content: center;
     align-items: center;
     color: $black-dark;
+    text-align: center;
     text-decoration: none;
     position: relative;
     transition: box-shadow .2s;
@@ -74,9 +70,16 @@
       }
     }
     & > i{
-      height: 40px;
-      font-size: 40px;
+      font-size: 44px;
       transition: transform .2s;
+    }
+    .fa-phone{
+      color: $phone;
+      font-size: 34px;
+    }
+    .fa-envelope{
+      color: $email;
+      font-size: 34px;
     }
     .fa-instagram{
       background: $instagram;
@@ -91,31 +94,6 @@
       margin: 10px 0;
       color: $black-light;
       font-size: .9em;
-    }
-  }
-  &_logo_container{
-    width: 100%;
-    padding: 0 20px;
-    display: flex;
-    justify-content: space-evenly;
-    align-items: center;
-    font-size: 30px;
-    .fa-phone{
-      color: $phone;
-      transform: rotate(90deg);
-      &:hover{
-        transform: rotate(90deg) scale(1.2);
-      }
-    }
-    .fa-envelope{
-      color: $email;
-      font-size: 1.1em;
-      &:hover{
-        transform: scale(1.2);
-      }
-    }
-    i{
-      transition: transform .2s;
     }
   }
   &_button-close{
@@ -137,6 +115,22 @@
     z-index: 99999;
     &:hover{
       background: $red;
+    }
+  }
+}
+
+@media (max-width: 425px) {
+  .contact{
+    &_card{
+      width: calc(100% - 32px);
+    }
+    &_text-empty{
+      margin: 1.5rem 10px 100px;
+    }
+    &_button{
+      &-empty{
+        font-size: 1.4rem;
+      }
     }
   }
 }

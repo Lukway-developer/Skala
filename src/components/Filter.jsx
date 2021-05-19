@@ -1,5 +1,4 @@
 const Filter = ({handleSetCategory}) => {
-
   return (
     <div className="filter_container">
       <div className="filter">

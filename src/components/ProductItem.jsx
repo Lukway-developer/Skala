@@ -62,8 +62,8 @@ const ProductItem = ({ data, handleShowContact }) => {
       }
 
       <h3 className="products_price">
-        <span className="products_price-number">{data.price} </span>
         ARS
+        <span className="products_price-number"> {data.price}</span>
       </h3>
 
       <img
@@ -80,7 +80,7 @@ const ProductItem = ({ data, handleShowContact }) => {
 
         <div className="products_button_container">
           <button className="products_button" onClick={handleAddProduct}>
-            Añadir al carrito <i className="fas fa-cart-plus" />
+            Añadir a la bolsa <i className="fas fa-shopping-bag"></i>
           </button>
         </div>
       </div>

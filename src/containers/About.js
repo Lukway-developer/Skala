@@ -1,16 +1,18 @@
-import Layout from "components/Layout";
-import Slider from "components/Slider";
 // import Loader from "components/Loader"
 
 const About = () => {
   return (
-    <Layout currentPage="About">
-      <section className="about">
-
-        <Slider/>
-
+    <section className="about">
+      <div className="about_card">
+        <img className="about_logo" src="./images/brand/Skala - Logo.svg" alt="Skala Logo" />
+        <h2 className="about_title">Sobre nosotros</h2>
         <div className="about_text_container">
-          <img className="about_logo" src="./images/brand/Skala - Logo.svg" alt="Skala Logo" />
+          <p className="about_text">Nuestra marca apareció en 1986 con el objetivo de llevar calidad
+            y precios justos al mercado de cosméticos. Actuando con transparencia e integridad, buscamos
+            innovar construyendo mucho más que una gran marca, sino lo mejor para las personas, el
+            medio ambiente y el cabello del mundo.
+          </p>
+          <img className="about_img" src="./images/logo-vegano.png" alt="100% Vegano, 0% Origen Natural"></img>
           <p className="about_text">
             Con 35 años de trayectoria en el mercado de cosmeticos, hemos
             demostrado que se pueden producir productos
@@ -18,7 +20,6 @@ const About = () => {
             con <span className="about_text-yellow">precios accesibles</span> y que
             sean <span className="about_text-blue">amigables para los animales</span>
           </p>
-          <img className="about_img" src="./images/logo-vegano.png" alt="100% Vegano, 0% Origen Natural"></img>
           <p className="about_text">
             Somos amigos de los animales desde julio de 2018 al convertirnos en
             una marca <span className="about_text-green">100% Vegana</span> y
@@ -29,8 +30,8 @@ const About = () => {
           </p>
           <p className="about_text-celebrate">¡Celebremos que nos hayas encontrado y que nosotros te hayamos encontrado a ti!</p>
         </div>
-      </section>
-    </Layout>
+      </div>
+    </section>
   );
 }
 

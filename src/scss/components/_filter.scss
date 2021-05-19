@@ -14,7 +14,7 @@
     padding: 0 20px;
     display: grid;
     grid-template-columns: repeat(4, 1fr);
-    grid-template-areas: ". . . filter";
+    grid-template-areas: "filter . . .";
     justify-items: center;
     gap: 50px;
     animation: appear .5s ease-out;
@@ -57,7 +57,7 @@
   .filter{
     &_container{
       grid-template-columns: repeat(3, 1fr);
-      grid-template-areas: ". . filter";
+      grid-template-areas: "filter . .";
       gap: 20px;
     }
   }
@@ -77,9 +77,36 @@
   .filter{
     width: 320px;
     &_container{
+      padding: 0 16px;
       grid-template-columns: 1fr;
       grid-template-areas: "filter";
       gap: 20px;
+    }
+  }
+}
+
+@media (max-width: 375px) {
+  .filter{
+    width: 100%;
+  }
+}
+
+@media (min-width: 1600px) {
+  .filter{
+    &_container{
+      grid-template-columns: repeat(5, 1fr);
+      grid-template-areas: "filter . . . .";
+    }
+  }
+}
+
+@media (min-width: 1960px) {
+  .filter{
+    &_container{
+      width: fit-content;
+      margin: 0 auto;
+      grid-template-columns: repeat(6, 1fr);
+      grid-template-areas: "filter . . . . .";
     }
   }
 }

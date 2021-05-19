@@ -1,0 +1,28 @@
+.mercadopago{
+  &_container{
+    width: 100%;
+    height: fit-content;
+    padding: 0 15px;
+  }
+  &_price{
+    margin: 5px 0;
+    display: inline-block;
+  }
+  &_logo{
+    height: 100%;
+  }
+  &_button{
+    width: 100%;
+    height: 60px;
+    border-radius: 15px;
+    border: 2px solid #00b1ea;
+    padding: 10px;
+    background-color: white;
+    display: inline-block;
+    cursor: pointer;
+    transition: background-color .2s;
+    &:hover{
+      background-color: $white-dark;
+    }
+  }
+}

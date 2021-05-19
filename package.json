@@ -1,7 +1,7 @@
 {
   "name": "skala-ecomerce-frontend",
   "description": "Skala Ecommerce - Frontend - Lukway Project",
-  "homepage": "https://lukway-developer.github.io/Skala/",
+  "homepage": "https://lukway-developer.github.io/Skala",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
@@ -12,16 +12,17 @@
     "react": "^17.0.1",
     "react-dom": "^17.0.1",
     "react-helmet": "^6.1.0",
-    "react-mount-animation": "0.0.9",
     "react-router-dom": "^5.2.0",
     "react-scripts": "4.0.3",
+    "react-sdk-mercadopago": "^1.1.0",
     "web-vitals": "^1.1.0"
   },
   "scripts": {
     "start": "react-scripts start",
     "build": "react-scripts build",
     "test": "react-scripts test",
-    "eject": "react-scripts eject"
+    "predeploy": "npm run build",
+    "deploy": "gh-pages -d build"
   },
   "eslintConfig": {
     "extends": [
