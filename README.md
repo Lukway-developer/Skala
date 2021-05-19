@@ -4,7 +4,7 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 ## Content
 
 This is an ecommerce project made with:
-
+![HTML Logo](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo") HTML
 <img src="https://github.com/Lukway-developer/Logos/blob/master/html.svg" title="HTML Logo" height=20/> HTML
 #### CSS - Sass
 #### React
