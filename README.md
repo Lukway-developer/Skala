@@ -1,11 +1,11 @@
 # Skala Ecommerce ![alt text](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
-You can see this project [here](https://lukway-developer.github.io/Skala/).
+You can see this project here [Skala Ecommerce ![alt text](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")](https://lukway-developer.github.io/Skala/).
 
 ## Content
 
 This is an ecommerce project made with:
 
-#### ![alt text](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo") HTML
+#### ![alt text](https://github.com/Lukway-developer/Logos/blob/master/html.svg?raw=true "HTML Logo") HTML
 #### CSS - Sass
 #### React
 #### Node.js - Express
