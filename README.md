@@ -1,9 +1,15 @@
 # Skala Ecommerce ![alt text](images/brand/Skala%20-%20Icon.svg?raw=true "Skala Logo")
-This project was bootstrapped with [Create React App](https://github.com/facebook/create-react-app).
+You can see this project [here](https://lukway-developer.github.io/Skala/).
 
-## Available Scripts
+## Content
 
-In the project directory, you can run:
+This is an ecommerce project made with:
+
+#### ![alt text](https://github.com/Lukway-developer/Logos/blob/master/html.svg "HTML Logo") HTML
+#### CSS - Sass
+#### React
+#### Node.js - Express
+#### Mercado Pago Api
 
 ### `npm start`
 
