@@ -17,6 +17,7 @@ You can see this project here [Skala Ecommerce](https://lukway-developer.github.
 ![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/home.png "Preview 1")
 ![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/products.png "Preview 2")
 ![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/products_buy.png "Preview 3")
+![Skala Logo](https://github.com/Lukway-developer/Projects-Images/blob/master/skala_ecommerce/bag.png "Preview 4")
 ### `About Lukway`
 
 #### Website: https://www.lukway.site/
